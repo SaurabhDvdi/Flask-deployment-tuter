@@ -105,3 +105,37 @@ footer {
     padding: 1rem;
     margin-top: auto;
 }
+
+.btn-learn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-learn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.learning-content {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.learning-content h3 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+}
+
+.learning-content p {
+    line-height: 1.8;
+    color: #555;
+}
