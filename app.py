@@ -60,6 +60,5 @@ def learn():
         error_message = f"Unable to fetch content from API: {str(e)}"
         return render_template('learn.html', content=None, error=error_message)
 
-if __name__ == '__main__':
-    app.run(host='74.220.48.0/24', debug=True)
+
   
