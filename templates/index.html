@@ -4,22 +4,16 @@
 
 {% block content %}
 <div class="container">
-    <h2>Welcome to Flask!</h2>
-    <p>This is a simple Flask application running on Replit.</p>
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
     
     <div class="features">
+        {% for feature in features %}
         <div class="feature">
-            <h3>Easy to Learn</h3>
-            <p>Flask is a lightweight web framework that's perfect for beginners.</p>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
         </div>
-        <div class="feature">
-            <h3>Flexible</h3>
-            <p>Build everything from simple websites to complex web applications.</p>
-        </div>
-        <div class="feature">
-            <h3>Well Documented</h3>
-            <p>Extensive documentation and a large community to help you.</p>
-        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
